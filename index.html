@@ -24,7 +24,7 @@ a {
 }
 a:focus,
 a:hover {
-	color: #f1c40f;
+	color: #336294;
 	text-decoration: none;
 }
 p {
@@ -70,7 +70,7 @@ h4 span:first-child {
 	font-weight: bold;
 }
 .container {
-	max-width: 900px;
+	max-width: 870px;
 	padding: 0 30px;
 }
 .col-sm-6 {
@@ -83,16 +83,27 @@ h4 span:first-child {
 	margin-top: 30px;
 }
 #header {
-	background: #f4f6f6;
-	padding: 50px 0;
+	background: #2d3f58;
+	padding: 15px 0;
 	margin-bottom: 30px;
 }
+#header h1 {
+	color: #fff;
+}
 #header h2 {
-	color: #95a5a6;
+	color: #d0d0d0;
 	font-size: 24px;
 }
+#header .row {
+	display: flex;
+	align-items: center;
+}
+#header-text {
+	padding-top: 20px;
+	margin-bottom: 0;
+}
 #content h3 {
-	color: #f1c40f;
+	color: #336294;
 	font-size: 26px;
 	margin-top: -4px;
 }
@@ -177,10 +188,13 @@ h4 span:first-child {
 	}
 	.strike-through span {
 		display: block;
-	}	
+	}
 	#header {
 		margin-bottom: 10px;
-		padding: 40px 0;
+		padding: 20px 0;
+	}
+	#header .row {
+	 	flex-direction: column-reverse;
 	}
 	#actions {
 		display: none;
@@ -195,7 +209,7 @@ h4 span:first-child {
 	<header id="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
+				<div id="header-text" class="col-sm-6 col-sm-push-3">
 					<h1>
 						Maria Tudose
 					</h1>
@@ -203,6 +217,9 @@ h4 span:first-child {
 						Software developer
 					</h2>
 				</div>
+				<div class="col-sm-3 col-sm-push-3">
+                  <img id="profile-photo" class="img-circle" alt="headshot" src="https://i.imgur.com/NFBftpL.jpeg" itemprop="image">
+                </div>
 			</div>
 		</div>
 	</header>
